@@ -1,0 +1,30 @@
+name: sc
+version: "0.1.0"
+author: Mitch Gollub <mitch.gollub@gmail.com>
+about: CLI tool for automation
+args:
+    # - config:
+    #     short: c
+    #     long: config
+    #     value_name: FILE
+    #     about: Sets a custom config file
+    #     takes_value: true
+    # - INPUT:
+    #     about: Sets the input file to use
+    #     required: true
+    #     index: 1
+    # - verbose:
+    #     short: v
+    #     multiple: true
+    #     about: Sets the level of verbosity
+subcommands:
+    - js-to-ts:
+        about: Converts JS files to TS
+        version: "0.1"
+        author: Mitch Gollub <mitch.gollub@gmail.com>
+        args:
+            - directory:
+                short: d
+                long: dir
+                takes_value: true
+                help: directory to convert files
